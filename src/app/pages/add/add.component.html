@@ -1,0 +1,36 @@
+
+<mat-form-field>
+    <mat-label>Codigo</mat-label>
+    <input matInput [(ngModel)]="student.id">
+    
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Nombre</mat-label>
+    <input matInput [(ngModel)]="student.name">
+    
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Apellido</mat-label>
+    <input matInput [(ngModel)]="student.lastname">
+    
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Correo Electronico</mat-label>
+    <input matInput [(ngModel)]="student.email">
+    
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Carrera</mat-label>
+    <mat-select>
+      <mat-option value="one">Computacion</mat-option>
+      <mat-option value="two">Civil</mat-option>
+      <mat-option value="tree">Arquitectura</mat-option>
+      <mat-option value="four">Electronica</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary"  (click)="save()">Guardar</button>
+ 

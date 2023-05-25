@@ -1,0 +1,5 @@
+<h2>Lista Estudiantes: </h2>
+<span *ngIf="student_list.length === 0">No existen datos </span>
+<ul *ngFor="let item of student_list">
+    <li> {{item.id}} | {{item.name}} | {{item.lastname}} |  {{item.email}} </li>
+</ul>
