@@ -9,7 +9,10 @@ import { StudentService } from 'src/app/services/student.service';
 })
 export class HomeComponent {
   student_list: Student[] = []
+  columnNames = ['Codigo','Nombre','Apellido','Email','Carrera']
   constructor(private studentService: StudentService){
-    this.student_list = studentService.getList()
+    this.student_list = this.studentService.getList()
+    console.log('lista recuperada')
+    console.log(this.student_list)
   }
 }

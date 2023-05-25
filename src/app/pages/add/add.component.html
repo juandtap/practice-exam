@@ -24,11 +24,11 @@
   </mat-form-field>
   <mat-form-field>
     <mat-label>Carrera</mat-label>
-    <mat-select>
-      <mat-option value="one">Computacion</mat-option>
-      <mat-option value="two">Civil</mat-option>
-      <mat-option value="tree">Arquitectura</mat-option>
-      <mat-option value="four">Electronica</mat-option>
+    <mat-select [(ngModel)]="student.career">
+      <mat-option value="Computacion">Computacion</mat-option>
+      <mat-option value="Civil">Civil</mat-option>
+      <mat-option value="Arquitectura">Arquitectura</mat-option>
+      <mat-option value="Electronica">Electronica</mat-option>
     </mat-select>
   </mat-form-field>
 
