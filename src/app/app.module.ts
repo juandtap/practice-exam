@@ -16,6 +16,8 @@ import { FormsModule } from '@angular/forms';
 import {MatTableModule} from '@angular/material/table';
 import {MatCardModule} from '@angular/material/card';
 import {MatRadioModule} from '@angular/material/radio';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,9 @@ import {MatRadioModule} from '@angular/material/radio';
     MatTableModule,
     MatCardModule,
     MatRadioModule,
+    MatMenuModule,
+    MatIconModule
+   
 
   ],
   providers: [],
