@@ -4,4 +4,5 @@ export class Student {
     lastname?: string
     email?: string
     career?: string
+    gender?: string
 }

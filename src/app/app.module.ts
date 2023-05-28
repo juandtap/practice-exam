@@ -14,6 +14,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import {MatTableModule} from '@angular/material/table';
+import {MatCardModule} from '@angular/material/card';
+import {MatRadioModule} from '@angular/material/radio';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import {MatTableModule} from '@angular/material/table';
     MatSelectModule,
     MatButtonModule,
     FormsModule,
-    MatTableModule
+    MatTableModule,
+    MatCardModule,
+    MatRadioModule,
 
   ],
   providers: [],

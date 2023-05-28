@@ -1,36 +1,53 @@
 
-<mat-form-field>
-    <mat-label>Codigo</mat-label>
-    <input matInput [(ngModel)]="student.id">
-    
-  </mat-form-field>
 
-  <mat-form-field>
-    <mat-label>Nombre</mat-label>
-    <input matInput [(ngModel)]="student.name">
-    
-  </mat-form-field>
-
-  <mat-form-field>
-    <mat-label>Apellido</mat-label>
-    <input matInput [(ngModel)]="student.lastname">
-    
-  </mat-form-field>
-
-  <mat-form-field>
-    <mat-label>Correo Electronico</mat-label>
-    <input matInput [(ngModel)]="student.email">
-    
-  </mat-form-field>
-  <mat-form-field>
-    <mat-label>Carrera</mat-label>
-    <mat-select [(ngModel)]="student.career">
-      <mat-option value="Computacion">Computacion</mat-option>
-      <mat-option value="Civil">Civil</mat-option>
-      <mat-option value="Arquitectura">Arquitectura</mat-option>
-      <mat-option value="Electronica">Electronica</mat-option>
-    </mat-select>
-  </mat-form-field>
-
-  <button mat-raised-button color="primary"  (click)="save()">Guardar</button>
  
+  <mat-card class="card-container">
+    <mat-card-content class="card-content">
+      <mat-form-field class="form-component">
+        <mat-label>Codigo</mat-label>
+        <input matInput [(ngModel)]="student.id">
+        
+      </mat-form-field>
+    
+      <mat-form-field class="form-component">
+        <mat-label>Nombre</mat-label>
+        <input matInput [(ngModel)]="student.name">
+        
+      </mat-form-field>
+    
+      <mat-form-field class="form-component">
+        <mat-label>Apellido</mat-label>
+        <input matInput [(ngModel)]="student.lastname">
+        
+      </mat-form-field>
+    
+      <mat-form-field class="form-component">
+        <mat-label>Correo Electronico</mat-label>
+        <input matInput [(ngModel)]="student.email">
+        
+      </mat-form-field>
+
+      
+
+      <mat-form-field class="form-component">
+        <mat-label>Carrera</mat-label>
+        <mat-select [(ngModel)]="student.career">
+          <mat-option value="Computacion">Computacion</mat-option>
+          <mat-option value="Civil">Civil</mat-option>
+          <mat-option value="Arquitectura">Arquitectura</mat-option>
+          <mat-option value="Electronica">Electronica</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <div class="radio-button-gender">
+        <label>Genero: &nbsp; &nbsp; &nbsp; </label>
+        <mat-radio-group aria-label="Genero" [(ngModel)]="student.gender">
+          <mat-radio-button value="Masculino">Masculino</mat-radio-button>
+          <mat-radio-button value="Femenino">Femenino</mat-radio-button>
+        </mat-radio-group>
+      </div>
+      <br>
+    
+      <button mat-raised-button color="primary" class="form-button" (click)="save()">Guardar</button>
+    </mat-card-content>
+  </mat-card>

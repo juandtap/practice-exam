@@ -9,7 +9,8 @@ import { StudentService } from 'src/app/services/student.service';
 })
 export class HomeComponent {
   student_list: Student[] = []
-  columnNames = ['Codigo','Nombre','Apellido','Email','Carrera']
+  // estos nombres deben coincidir con los de matColumnDef en el html
+  columnNames = ['Codigo','Nombre','Apellido','Email','Carrera', 'Genero']
   constructor(private studentService: StudentService){
     this.student_list = this.studentService.getList()
     console.log('lista recuperada')
