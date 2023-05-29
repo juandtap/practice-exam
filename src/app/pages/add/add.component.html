@@ -5,7 +5,7 @@
     <mat-card-content class="card-content">
       <mat-form-field class="form-component">
         <mat-label>Codigo</mat-label>
-        <input matInput [(ngModel)]="student.id">
+        <input matInput [(ngModel)]="student.id" [disabled]="isEditing === 'edit'">
         
       </mat-form-field>
     

@@ -18,9 +18,20 @@ export class StudentService {
     if(student.id !== null && !this.student_list.some(element => element.id === student.id)){
       this.student_list.push(student)
     } else{
+      alert("!valor del codigo nulo o repetido")
       console.log("valor del codigo nulo o repetido")
     }
     
+  }
+
+  update(student: Student){
+    let index = 0
+    for (let s of this.student_list){
+      if(s.id === student.id){
+        this.student_list[index] = student
+      }
+      index++
+    }
   }
 
   delete(student: Student){

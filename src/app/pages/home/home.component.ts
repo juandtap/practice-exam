@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { MatTable } from '@angular/material/table';
-import { Router } from '@angular/router';
+import {  Router } from '@angular/router';
 import { Student } from 'src/app/model/student';
 import { StudentService } from 'src/app/services/student.service';
 
@@ -27,6 +27,17 @@ export class HomeComponent {
   delete(student : Student){
     this.studentService.delete(student)
     this.table?.renderRows()
+  }
+
+  edit(student : Student){
+    let queryParams = {
+      flag: 'edit',
+      studentToEdit : JSON.stringify(student)
+      
+    }
+   
+    
+    this.router.navigate(['pages/add'], { queryParams})
   }
 
   
